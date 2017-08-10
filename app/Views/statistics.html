@@ -1,0 +1,109 @@
+<div id="statistics">
+    <h3>Количество приемов пищи за день: {{dayResults.length}}</h3><br>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 leftSideStatistics">
+            <div>
+                <ol>
+                    <li ng-repeat="result in dayResults">
+                        <p>Прием пищи <span class="label label-default">{{result.time}}</span></p>
+                        <span>Белки: {{result.proteinsTotalAmount}}</span><br>
+                        <span>Жиры: {{result.fatsTotalAmount}}</span><br>
+                        <span>Углеводы: {{result.carbohydratesTotalAmount}}</span><br>
+                        <span>Общее кол-во калорий: {{result.caloriesTotalAmount}}</span>&nbsp;
+                        <button type="button" class="btn btn-warning btn-xs" ng-click="showMore(result.num)">Подробнее</button>
+                        <br><br>
+                    </li>
+                </ol>
+            </div>
+            <div class="btnStatNext"><a href="#/main" ng-click="next()">Рассчитать следующий прием пищи&nbsp;<span class="glyphicon glyphicon-grain glyBtn" aria-hidden="true"></span></a></div>
+            <div class="dayResult">
+                <h3>Результат за весь день:</h3>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Белки</th>
+                        <th>Жиры</th>
+                        <th>Углеводы</th>
+                        <th>Калории</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{totalDayProteins}}</td>
+                        <td>{{totalDayFats}}</td>
+                        <td>{{totalDayCarbohydrates}}</td>
+                        <td>{{totalDayCalories}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 rightSideStatistics">
+            <div ng-show="flagShowMore" class="timeResult">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Продукт</th>
+                            <th style="white-space: nowrap">Кол-во</th>
+                            <th>Белки</th>
+                            <th>Жиры</th>
+                            <th>Углеводы</th>
+                            <th>Калории</th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="item in showResult">
+                        <tr>
+                            <td>{{item.product}}</td>
+                            <td>{{item.value}} {{item.unit}}</td>
+                            <td>{{item.proteinsAmount}}</td>
+                            <td>{{item.fatsAmount}}</td>
+                            <td>{{item.carbohydratesAmount}}</td>
+                            <td>{{item.caloriesAmount}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="recommendationForm">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 leftColResult">
+            <h3>Калькулятор расчета сжигания калорий при различных физических нагрузках</h3>
+            <p style="text-align: justify;">Сколько сжигается калорий за час тренировки зависит не только от типа тренировки, но и от массы тела занимающегося человека.
+                Поэтому затраты калорий строго индивидуальны. Введите ваши данные и выберите тип тренировки:</p>
+            Введите ваш вес: <input class="weightInput" step="0.1" type="number" ng-model="weight"><br><br>
+            <select ng-model="typeOfTraining" class="typeOfTrainingSelect">
+                <option value="">---Выберите тип тренировки---</option>
+                <option ng-repeat="option in trainings" value="{{option.num}}">{{option.type}}</option>
+            </select>
+            <button type="button" class="btn btn-default btnRecommendationForm" ng-click="recommendCalc()">Рассчитать</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="resultRecommendForm">
+                <h3>Необходимо сжечь калорий: {{totalDayCalories}}</h3>
+                <div ng-hide="showTotalResult">
+                    <h4>Введите Ваш вес, выберите тип тренировки и нажмите "Рассчитать" </h4>
+                </div>
+                <div ng-show="showTotalResult">
+                    <p>При выбранном типе тренировки время сжигания:</p>
+                    <h4>В часах: {{resultInHours}}</h4>
+                    <h4>В минутах: {{resultInMinutes}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

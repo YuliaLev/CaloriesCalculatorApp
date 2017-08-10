@@ -1,0 +1,365 @@
+#bodyWrapper {
+    background: url("/images/1.jpg") no-repeat center bottom fixed;
+    background-size: cover;
+}
+
+#main .selectMain input.selectInput {
+  width: 250px;
+  height: 30px;
+  margin: 8px 0;
+  position: relative;
+  z-index: 102;
+  padding: 5px;
+}
+
+::-webkit-input-placeholder  {color:#b3b3b3;}
+:-ms-input-placeholder {color:#b3b3b3;}
+
+#main .selectMain .tableWrapper {
+  height: 200px;
+  overflow-y: scroll;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 0 100px -1px #969696;
+}
+
+#main .selectMain table.tableHeader {
+  margin-bottom: -2px;
+  background-color: white;
+  position: relative;
+  z-index: 100;
+  box-shadow: -3px -36px 100px -13px #8bf957;
+}
+
+#main .selectMain .tableWrapper table {
+  margin-bottom: 0;
+}
+
+#main .selectMain .tableWrapper td {
+  width: 37px;
+}
+
+#main .selectMain .tableWrapper tr:active {
+   background-color: #c3efc4;
+ }
+
+#main .newProductForm {
+  background-color: rgba(255, 250, 250, 0.6);
+  min-height: 223px;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 8px 15px;
+  position: absolute;
+  top: 355px;
+  width: 95%;
+}
+
+#main .newProductForm .unitDiv {
+    position: absolute;
+    left: 326px;
+    top: 109px;
+}
+
+#main .newProductForm input.productName, #main .newProductForm input.newProductParam {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+}
+
+#main .newProductForm input.newProductParam {
+  width: 70px;
+  border-radius: 22px;
+  outline: none;
+  padding-left: 8px;
+    margin-bottom: 1px;
+}
+
+#main .newProductForm button.btnSaveNewProductForm {
+  width: 110px;
+  outline: none;
+  margin-top: 9px;
+}
+
+#main .newProductForm .btnCloseNewProductForm, #main .addForm  .btnCloseNewProductForm{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 27px;
+}
+
+#main .addForm {
+    background-color: rgba(255, 250, 250, 0.6);
+    min-height: 220px;
+    width: 95%;
+    padding: 8px 15px;
+    position: absolute;
+    top: 355px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#main .addForm .addFormInput {
+    width: 250px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#main .newProductForm .alert, #main .addForm .alert{
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 2px;
+  margin-bottom: 0;
+}
+
+#main button.btnAddNewProduct {
+  margin-top: 30px;
+  position: absolute;
+}
+
+#main button.btnAddNewProductHide {
+  display: none;
+}
+
+#main button.btnAdd {
+    right: 16px;
+    margin-top: 9px;
+}
+
+#main button.btnAddToList {
+    margin-top: 9px;
+}
+
+#main .showSelectedMain {
+  height: 420px;
+  background-color: #F5F5DC;
+}
+
+#main .showSelectedMain .userListWrapper{
+  height: 280px;
+  overflow-y: auto;
+  background-color: white;
+  margin-top: 44px;
+  padding: 10px 15px;
+  margin-bottom: 6px;
+}
+
+#main .showSelectedMain .userListWrapper .label-default {
+    background-color: rgba(153, 153, 153, 0.73);
+}
+
+#main .showSelectedMain .userListItem{
+  padding: 4px;
+  background-color: white;
+}
+
+#main .showSelectedMain button.btnCalculate {
+  position: relative;
+  width: 180px;
+  left: 197px;
+}
+
+#main .showSelectedMain button.btnNext {
+  position: relative;
+  left: 186px;
+  z-index: 200;
+}
+
+#main .showSelectedMain div.btnStat {
+  background-color: #32CD32;
+  display: inline-block;
+  height: 34px;
+  width: 170px;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  float: right;
+  position: relative;
+  z-index: 200;
+}
+
+#main .showSelectedMain div.btnStat:hover, #main .showSelectedMain div.btnStat:active {
+    background-color: #32aa01;
+    border: 1px solid #32aa01;
+}
+
+#main .showSelectedMain div.btnStat a, #main .showSelectedMain div.btnStat a:hover {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  height: 27px;
+}
+
+#main .showSelectedMain .resultForm {
+  background-color: white;
+  height: 230px;
+  padding: 25px;
+  box-shadow: 0 0 100px -1px #969696;
+  position: absolute;
+  width: 95%;
+    margin-top: 6px;
+}
+
+#main .infoClass {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 2px;
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+
+.nextNewInfo {
+    position: absolute;
+    width: 95%;
+    top: 410px;
+    opacity: 0.9;
+}
+
+.message {
+    color: #923b39;
+}
+
+.glyBtn {
+    font-size: 16px;
+}
+
+#statistics {
+    padding-top: 6px;
+}
+
+#statistics div.btnStatNext {
+  background-color: #32CD32;
+  display: inline-block;
+  height: 34px;
+  width: 280px;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 34px;
+  margin-top: 22px;
+}
+
+#statistics div.btnStatNext:hover, #statistics div.btnStatNext:active {
+    background-color: #32aa01;
+    border: 1px solid #32aa01;
+}
+
+#statistics div.btnStatNext a, #statistics div.btnStatNext a:hover {
+  text-decoration: none;
+  color: white;
+    display: inline-block;
+    height: 27px;
+}
+
+#statistics div.dayResult {
+    background-color: rgba(220, 220, 220, 0.6);
+    min-height: 120px;
+    width: 95%;
+    padding: 8px 15px;
+    margin: 45px 0;
+}
+
+#statistics div.dayResult h3{
+    margin: 9px 10px 12px 8px;
+}
+
+#statistics div.timeResult {
+    background-color: rgba(220, 220, 220, 0.6);
+    min-height: 120px;
+    width: 95%;
+    padding: 8px 15px;
+    margin: 15px 0;
+}
+
+#statistics button {
+    outline: none;
+}
+
+#statistics .btnRecommendationForm, #recommendationForm .btnRecommendationForm  {
+  position: relative;
+    top: 14px;
+    background-color: rgb(255, 178, 0);
+    height: 34px;
+    width: 240px;
+    border: 1px solid transparent;
+    color: white;
+}
+
+#statistics .btnRecommendationForm a, #statistics .btnRecommendationForm a:hover, #statistics .btnRecommendationForm a:active, #statistics .btnRecommendationForm a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#statistics .btnRecommendationForm:hover, #statistics .btnRecommendationForm:active, #recommendationForm .btnRecommendationForm:hover,
+#recommendationForm .btnRecommendationForm:active {
+    background-color: #FFA500;
+    border: 1px solid #FF8C00;
+}
+
+#recommendationForm {
+    background-color: rgba(220, 220, 220, 0.6);
+    height: 350px;
+    padding: 8px 26px;
+    margin-bottom: 50px;
+}
+
+#recommendationForm .leftColResult {
+    padding-right: 26px;
+}
+
+#recommendationForm .weightInput {
+    margin-top: 20px;
+}
+
+#recommendationForm .typeOfTrainingSelect {
+    width: 85%;
+    margin: auto;
+    display: inline-block;
+}
+
+#recommendationForm .btnCloseForm {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 27px;
+}
+
+#recommendationForm  .resultRecommendForm {
+    height: 150px;
+    width: 470px;
+    background-color: rgba(255, 255, 250, 0.5);
+    margin-top: 77px;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-top: 1px;
+    box-shadow: -7px 0px 100px -11px #afa0af;
+}
+
+#statistics .label-default {
+    background-color: rgba(153, 153, 153, 0.73);
+}
+
+.clearSearchProduct {
+    position: absolute;
+    top: 68px;
+    left: 246px;
+    z-index: 200;
+    outline: none;
+}
